@@ -9,13 +9,15 @@ Copy everything in hideandseek into a directory in your cfg directory called hid
 Host on a ghost server (https://ghost.portal2.sr)
 
 In the pre-launch options:
-`svar_set seeker SeekerNameHere; exec hideandseek/hideandseek; svar_set countdown 60; map sp_a3_03`
+`svar_set seeker_one 0; svar_set seeker_two 0; svar_set seeker_three 0; svar_set seeker_four 0; exec hideandseek/hideandseek; svar_set countdown 60; map sp_a3_03`
 
-Replace seeker with whatever you want the seeker to be
+Replace the seeker svars 0 with whoever you want the seekers to be
 
 Replace map with whatever map you want it to be
 
 Replace countdown with how long the seeker will wait at the start of the map (in seconds)
 Note: must be at least 3 seconds
+
+To play fair as a hider, if you're found, type "found" in console, or press Y (default bind), the bind can be changed in hider.cfg
 
 Have fun!
