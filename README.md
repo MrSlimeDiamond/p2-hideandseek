@@ -2,6 +2,8 @@
 
 ## Client
 Copy everything in hideandseek into a directory in your cfg directory called hideandseek
+### Requirements
+- [SourceAutoRecord](https://github.com/p2sr/sourceautorecord)
 
 ## Server
 Host on a ghost server (https://ghost.portal2.sr)
@@ -14,7 +16,6 @@ Replace seeker with whatever you want the seeker to be
 Replace map with whatever map you want it to be
 
 Replace countdown with how long the seeker will wait at the start of the map (in seconds)
-
 Note: must be at least 3 seconds
 
 Have fun!
