@@ -18,6 +18,6 @@ Replace map with whatever map you want it to be
 Replace countdown with how long the seeker will wait at the start of the map (in seconds)
 Note: must be at least 3 seconds
 
-To play fair as a hider, if you're found, type "found" in console, or press Y (default bind), the bind can be changed in hider.cfg
+To play fair as a hider, if you're found, type "found" in console.
 
 Have fun!
