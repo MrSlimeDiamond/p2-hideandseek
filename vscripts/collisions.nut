@@ -3,7 +3,7 @@ if("Entities" in this) {
         local seeker = null;
         while (seeker = Entities.FindByName(seeker, "_ghost_normal")) {
             local pos = seeker.GetOrigin();
-            if ((pos-Vector(0,0,0)).Length()>32) break; //wtf
+            if ((pos-Vector(0,0,0)).Length()>32 || seeker.GetModelName() == "models/npcs/turret/turret.mdl") break; //wtf
         }
 
         if(seeker){
