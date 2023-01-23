@@ -2,8 +2,13 @@
 
 ## Client
 Copy everything in hideandseek into a directory in your cfg directory called hideandseek
+
+Copy everything in vscripts directory into `Portal 2/portal2/scripts/vscripts`
 ### Requirements
 - [SourceAutoRecord](https://github.com/p2sr/sourceautorecord)
+
+### !!! IMPORTANT !!!
+Remove the added vscripts before speedrunning! If you don't your run will get a vscript infraction and your runn will get denied.
 
 ## Server
 Host on a ghost server (https://ghost.portal2.sr)
@@ -20,7 +25,7 @@ Note: must be at least 3 seconds
 
 To play fair as a hider, if you're found, type "found" in console.
 
-!!!!!!!IMPORTANT!!!!!!!
+### !!! IMPORTANT !!!
 
 All of the `seeker_` svars must be either 0, or a ghost name of someone.
 
