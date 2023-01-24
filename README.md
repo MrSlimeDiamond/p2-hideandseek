@@ -19,11 +19,13 @@ Remove the added vscripts before speedrunning! If you don't, your run will be re
 Host on a [ghost server](https://ghost.portal2.sr).
 
 In the pre-launch options:
-`svar_set seekers "<seeker one>" "<seeker two>" "<etc>"; svar_set countdown <seconds>; svar_set collisions 0; exec hideandseek/hideandseek; map sp_a3_03`
+`svar_set seekers "<seeker one>" "<seeker two>" "<etc>"; svar_set countdown <seconds>; svar_set collisions 0; exec hideandseek/hideandseek; map <map>`
 
-You can have as many seekers as you like, but if you enable automatic collisions with `svar_set collisions 1`, it is currently only possible to have one (1) seeker.
+You can have as many seekers as you like.
 
-Replace map with whatever map you want it to be
+You can enable automatic collisions with `svar_set collisions 1` instead of 0.
+
+Replace `<map>` with whatever map you want to play on
 
 Replace `<seconds>` with how long the seeker will wait at the start of the map
 
