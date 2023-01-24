@@ -8,7 +8,6 @@ if("Entities" in this) {
 
         if(seeker){
             local dist = (seeker.GetOrigin() - GetPlayer().GetOrigin()).Length()
-            print(dist + "\n")
             if(dist <= 150){
                 SendToConsole("sar_function_run found")
                 EntFire("collision_timer","Disable","")
@@ -16,7 +15,11 @@ if("Entities" in this) {
         }
     }
 
-    IncludeScript("ppmod3.nut");
-    ppmod.interval(loop,0.25,"collision_timer")
+    local timer = Entities.CreateByClassname("logic_timer");
+    timer.__KeyValueFromString("Targetname", "collision_timer");
+    timer.__KeyValueFromString("OnTimer", "!self\x001BRunScriptCode\x1Bloop()\x1B0\x1B-1");
+    EntFireByHandle(timer, "RefireTime", "0.25", 0, null, null);
+    EntFireByHandle(timer, "Enable", "", 0, null, null);
+
     printl("Collisions VScript loaded!")
-  }
+}

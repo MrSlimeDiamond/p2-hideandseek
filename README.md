@@ -1,34 +1,32 @@
 # Portal 2 hide and seek
 
 ## Client
-Copy everything in hideandseek into a directory in your cfg directory called hideandseek
+
+Copy everything in hideandseek into a directory in your cfg directory called hideandseek, i.e. `Portal 2/portal2/cfg/hideandseek/hider.cfg`
 
 Copy everything in vscripts directory into `Portal 2/portal2/scripts/vscripts`
+
 ### Requirements
+
 - [SourceAutoRecord](https://github.com/p2sr/sourceautorecord)
 
-### !!! IMPORTANT !!!
-Remove the added vscripts before speedrunning! If you don't your run will get a vscript infraction and your runn will get denied.
+### IMPORTANT
+
+Remove the added vscripts before speedrunning! If you don't, your run will be rejected.
 
 ## Server
-Host on a ghost server (https://ghost.portal2.sr)
+
+Host on a [ghost server](https://ghost.portal2.sr).
 
 In the pre-launch options:
-`svar_set seeker_one 0; svar_set seeker_two 0; svar_set seeker_three 0; svar_set seeker_four 0; exec hideandseek/hideandseek; svar_set countdown 60; svar_set collisions 1; map sp_a3_03`
+`svar_set seekers "<seeker one>" "<seeker two>" "<etc>"; svar_set countdown <seconds>; svar_set collisions 0; exec hideandseek/hideandseek; map sp_a3_03`
 
-Replace the seeker svars 0 with whoever you want the seekers to be
+You can have as many seekers as you like, but if you enable automatic collisions with `svar_set collisions 1`, it is currently only possible to have one (1) seeker.
 
 Replace map with whatever map you want it to be
 
-Replace countdown with how long the seeker will wait at the start of the map (in seconds)
-Note: must be at least 3 seconds
+Replace `<seconds>` with how long the seeker will wait at the start of the map
 
-To play fair as a hider, if you're found, type "found" in console.
-
-### !!! IMPORTANT !!!
-
-All of the `seeker_` svars must be either 0, or a Steam name of someone.
-
-If you enable automatic collisions with `svar_set collisions 1`, there can only be one seeker.
+To play fair as a hider, if you're found, type `found` in console. This can be bound to a key with `bind <key> found`. This is not necessary if you are playing with automatic collisions.
 
 Have fun!
