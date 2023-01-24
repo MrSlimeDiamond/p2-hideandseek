@@ -2,6 +2,8 @@
 
 ## Client
 
+[Setup Video](https://youtu.be/w_PhmProlfg)
+
 Copy everything in hideandseek into a directory in your cfg directory called hideandseek, i.e. `Portal 2/portal2/cfg/hideandseek/hider.cfg`
 
 Copy everything in vscripts directory into `Portal 2/portal2/scripts/vscripts`
