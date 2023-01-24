@@ -27,7 +27,7 @@ To play fair as a hider, if you're found, type "found" in console.
 
 ### !!! IMPORTANT !!!
 
-All of the `seeker_` svars must be either 0, or a ghost name of someone.
+All of the `seeker_` svars must be either 0, or a Steam name of someone.
 
 If you enable automatic collisions with `svar_set collisions 1`, there can only be one seeker.
 
