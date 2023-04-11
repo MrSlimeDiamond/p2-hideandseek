@@ -21,7 +21,7 @@ Remove the added vscripts before speedrunning! If you don't, your run will be re
 Host on a [ghost server](https://ghost.portal2.sr).
 
 In the pre-launch options:
-`svar_set seekers "<seeker one>" "<seeker two>" "<etc>"; svar_set countdown <seconds>; svar_set collisions 0; exec hideandseek/hideandseek; map <map>`
+`svar_set seekers "<seeker one>" "<seeker two>" "<etc>" ""; svar_set countdown <seconds>; svar_set collisions 0; exec hideandseek/hideandseek; map <map>`
 
 You can have as many seekers as you like.
 
